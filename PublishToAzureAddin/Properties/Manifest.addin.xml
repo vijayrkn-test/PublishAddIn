@@ -1,0 +1,12 @@
+﻿<ExtensionModel>
+    <Extension path = "/MonoDevelop/Ide/Commands">
+        <Command id = "PublishToAzure.PublishToAzureCommands.PublishToAzure"
+                 _label = "Publish to Azure"
+                 _description = "Publish to Azure"
+				defaultHandler = "PublishToAzure.PublishToAzureHandler"/>
+    </Extension>
+
+    <Extension path = "/MonoDevelop/Ide/MainMenu/Build">
+        <CommandItem id="PublishToAzure.PublishToAzureCommands.PublishToAzure" />
+    </Extension>
+</ExtensionModel>
