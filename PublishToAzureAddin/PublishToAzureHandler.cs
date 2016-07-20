@@ -57,7 +57,7 @@ namespace PublishToAzure
 
 					// Trigger XBuild
 					MonoDevelop.Projects.CustomCommand buildAndPublishCommand = new MonoDevelop.Projects.CustomCommand();
-					var deployTemplate = "xbuild {0} /p:deployOnBuild=true /p:DeployIISPath={1} /p:UserName={2} /p:Password={3} /p:publishProfile=\"MSDeployProfile\" /p:Configuration=Release";
+					var deployTemplate = "xbuild {0} /p:deployOnBuild=true /p:DeployIISAppPath={1} /p:UserName={2} /p:Password={3} /p:publishProfile=\"MSDeployProfile\" /p:Configuration=Release";
 					buildAndPublishCommand.Command = String.Format(deployTemplate, IdeApp.ProjectOperations.CurrentSelectedProject.FileName.FullPath,
 																	siteName,
 																	userId,
